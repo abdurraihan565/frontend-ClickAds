@@ -17,7 +17,7 @@ function Login() {
 
     try {
       await axios
-        .post('https://clickads-backend.onrender.com/api/auth/login', {
+        .post('http://localhost:3002/api/auth/login', {
           email: LoginInfo.email,
           password: LoginInfo.password,
         })
