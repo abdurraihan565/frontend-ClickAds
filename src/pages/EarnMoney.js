@@ -10,7 +10,8 @@ function EarnMoney() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get('https://clickads-backend.onrender.com/api/products');
+        const result = await axios.get('localhost:3000/api/products');
+
         setProductData(result.data.payload.products);
       } catch (e) {
         setInvalidMsg(e.response.data.message);
