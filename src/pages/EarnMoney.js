@@ -10,8 +10,12 @@ function EarnMoney() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+<<<<<<< HEAD
         const result = await axios.get('http://localhost:3002/api/products');
 
+=======
+        const result = await axios.get('http://localhost:3000/api/products');
+>>>>>>> 29ac930 (first commit)
         setProductData(result.data.payload.products);
       } catch (e) {
         setInvalidMsg(e.response.data.message);
