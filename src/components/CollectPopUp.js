@@ -38,7 +38,7 @@ function CollectPopUp(props) {
   useEffect(() => {
     try {
       axios
-        .get('http://localhost:3002/api/users/' + id, {})
+        .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
           console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
@@ -52,7 +52,7 @@ function CollectPopUp(props) {
   const CollectHandelar = async () => {
     try {
       await axios
-        .put('http://localhost:3002/api/users/update-user-points/' + userid, {
+        .put('https://clickads-backend.onrender.com/api/users/update-user-points/' + userid, {
           points: tatalPoints,
         })
         .then((response) => {
@@ -64,7 +64,7 @@ function CollectPopUp(props) {
     // delete product
     try {
       axios
-        .delete('http://localhost:3002/api/products/' + productId, {})
+        .delete('https://clickads-backend.onrender.com/api/products/' + productId, {})
         .then((response) => {
           console.log(response.data.message);
         });
