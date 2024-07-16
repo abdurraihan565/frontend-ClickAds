@@ -10,7 +10,7 @@ function ContactUs() {
     e.preventDefault();
     try {
       await axios
-        .post('http://localhost:3002/api/contact', {
+        .post('https://clickads-backend.onrender.com/api/contact', {
           email: email,
           message: message,
         })
