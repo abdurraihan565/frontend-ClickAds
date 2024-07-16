@@ -26,7 +26,7 @@ function Home() {
 
     try {
       await axios
-        .post('http://localhost:3002/api/users/process-register', {
+        .post('https://clickads-backend.onrender.com/api/users/process-register', {
           name: RegisterInfo.name,
           email: RegisterInfo.email,
           password: RegisterInfo.password,
