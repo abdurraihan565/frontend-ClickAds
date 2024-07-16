@@ -5,7 +5,7 @@ function Error() {
   return (
     <div className="error">
     <Helmet>
-        <title>Contact Us</title>
+        <title>Error</title>
         <meta name="description" content="This is a description of my page" />
         <meta
           name="keywords"
