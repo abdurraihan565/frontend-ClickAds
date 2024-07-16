@@ -12,7 +12,7 @@ function PayoutsHandelar() {
 
     try {
       await axios
-        .post('http://localhost:3002/api/payouts', {
+        .post('https://clickads-backend.onrender.com/api/payouts', {
           email: email,
           paymentMethod: paymentMethod,
           amount: points,
@@ -39,7 +39,7 @@ function PayoutsHandelar() {
   useEffect(() => {
     try {
       axios
-        .get('http://localhost:3002/api/users/' + id, {})
+        .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
           console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
