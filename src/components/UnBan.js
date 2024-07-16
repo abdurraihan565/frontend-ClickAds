@@ -10,7 +10,7 @@ function UnBan() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get('http://localhost:3002/api/users');
+        const result = await axios.get('https://clickads-backend.onrender.com/api/users');
         setUsersData(result.data.payload.users);
       } catch (e) {
         if (e.response.data.message) {
