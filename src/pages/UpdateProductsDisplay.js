@@ -28,7 +28,7 @@ function UpdateProductsDisplay() {
 
     try {
       await axios
-        .put('http://localhost:3002/api/products/' + id, {
+        .put('https://clickads-backend.onrender.com/api/products/' + id, {
           name: UpdateProducsInfo.name,
           slug: UpdateProducsInfo.slug,
           description: UpdateProducsInfo.description,
