@@ -10,7 +10,7 @@ function UpdateProducts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get('http://localhost:3002/api/products');
+        const result = await axios.get('https://clickads-backend.onrender.com/api/products');
         setProductData(result.data.payload.products);
       } catch (e) {
         if (e.response.data.message) {
