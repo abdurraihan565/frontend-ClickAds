@@ -14,7 +14,7 @@ function DeleteMsgs() {
 
     try {
       await axios
-        .delete('http://localhost:3002/api/contact/delete-message/' + id, {})
+        .delete('https://clickads-backend.onrender.com/api/contact/delete-message/' + id, {})
         .then((response) => {
           setsuccessMsg(response.data.message);
         });
