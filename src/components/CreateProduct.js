@@ -26,7 +26,7 @@ function CreateProduct() {
 
     try {
       await axios
-        .post('http://localhost:3002/api/products/create-product', {
+        .post('https://clickads-backend.onrender.com/api/products/create-product', {
           name: CreateProducsInfo.name,
           slug: CreateProducsInfo.slug,
           description: CreateProducsInfo.description,
