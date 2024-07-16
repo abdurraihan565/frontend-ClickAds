@@ -11,7 +11,7 @@ function Message() {
     e.preventDefault();
     try {
       await axios
-        .post('http://localhost:3002/api/contact/replay-message', {
+        .post('https://clickads-backend.onrender.com/api/contact/replay-message', {
           email: email,
           message: message,
         })
