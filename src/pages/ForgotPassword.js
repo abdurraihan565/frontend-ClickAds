@@ -11,7 +11,7 @@ function ForgotPassword() {
 
     try {
       await axios
-        .post('http://localhost:3002/api/users/forget-password', {
+        .post('https://clickads-backend.onrender.com/api/users/forget-password', {
           email: email,
         })
         .then((response) => {
