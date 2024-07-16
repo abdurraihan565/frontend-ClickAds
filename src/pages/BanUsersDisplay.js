@@ -14,7 +14,7 @@ function BanUsersDisplay() {
 
     try {
       await axios
-        .put('http://localhost:3002/api/users/ban-user/' + id, {})
+        .put('https://clickads-backend.onrender.com/api/users/ban-user/' + id, {})
         .then((response) => {
           setsuccessMsg(response.data.message);
         });
