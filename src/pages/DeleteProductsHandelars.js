@@ -14,7 +14,7 @@ function DeleteProductsHandelars() {
 
     try {
       await axios
-        .delete('http://localhost:3002/api/products/' + id, {})
+        .delete('https://clickads-backend.onrender.com/api/products/' + id, {})
         .then((response) => {
           setsuccessMsg(response.data.message);
         });
