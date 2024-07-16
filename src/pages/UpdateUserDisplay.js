@@ -26,7 +26,7 @@ function UpdateUserDisplay() {
 
     try {
       await axios
-        .put('http://localhost:3002/api/users/' + id, {
+        .put('https://clickads-backend.onrender.com/api/users/' + id, {
           name: UpdateUserInfo.name,
           email: UpdateUserInfo.email,
           password: UpdateUserInfo.password,
