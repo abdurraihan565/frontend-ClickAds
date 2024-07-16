@@ -14,7 +14,7 @@ function DeleteUserDisplay() {
 
     try {
       await axios
-        .delete('http://localhost:3002/api/users/' + id, {})
+        .delete('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
           setsuccessMsg(response.data.message);
         });
