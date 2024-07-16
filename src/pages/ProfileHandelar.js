@@ -22,7 +22,7 @@ function ProfileHandelar() {
   useEffect(() => {
     try {
       axios
-        .get('http://localhost:3002/api/users/' + id, {})
+        .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
           console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
@@ -37,7 +37,7 @@ function ProfileHandelar() {
 
     try {
       await axios
-        .put('http://localhost:3002/api/users/' + userId, {
+        .put('https://clickads-backend.onrender.com/api/users/' + userId, {
           name: name,
           email: email,
           password: password,
