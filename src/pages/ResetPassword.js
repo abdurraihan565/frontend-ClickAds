@@ -16,7 +16,7 @@ function ResetPassword() {
 
     try {
       await axios
-        .put('http://localhost:3002/api/users/reset-password', {
+        .put('https://clickads-backend.onrender.com/api/users/reset-password', {
           token: token,
           password: password,
         })
