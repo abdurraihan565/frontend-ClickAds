@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 function ContactUs() {
   const [email, setemail] = useState('');
   const [message, setmessage] = useState('');
