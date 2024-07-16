@@ -15,7 +15,7 @@ function Dashboard() {
   useEffect(() => {
     try {
       axios
-        .get('http://localhost:3002/api/users/' + id, {})
+        .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
           console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
