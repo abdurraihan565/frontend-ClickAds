@@ -11,7 +11,7 @@ function DeleteMessages() {
     const fetchData = async () => {
       try {
         const result = await axios.get(
-          'http://localhost:3002/api/contact/get-message'
+          'https://clickads-backend.onrender.com/api/contact/get-message'
         );
         setProductData(result.data.payload.message);
       } catch (e) {
