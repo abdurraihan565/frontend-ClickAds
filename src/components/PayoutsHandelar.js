@@ -9,7 +9,7 @@ function PayoutsHandelar() {
   useEffect(() => {
     try {
       axios
-        .get('http://localhost:3002/api/payouts/all-payouts', {})
+        .get('https://clickads-backend.onrender.com/api/payouts/all-payouts', {})
         .then((response) => {
           setPayoutsData(response.data.payload.payouts);
         });
