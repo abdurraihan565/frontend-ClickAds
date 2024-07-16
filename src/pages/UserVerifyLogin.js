@@ -15,7 +15,7 @@ function UserVerifyLogin() {
   const ActivateHandelar = async () => {
     try {
       await axios
-        .post('http://localhost:3002/api/users/verify', {
+        .post('https://clickads-backend.onrender.com/api/users/verify', {
           token,
         })
         .then((response) => {
