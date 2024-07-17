@@ -19,11 +19,11 @@ function Navber() {
   return (
     <div className="navber_containner">
       <div className="navber_containner_title">
-         <Link to="/">
-          <div className="img">
-            <img src="images/img.png" alt="" />
-          </div>
-        </Link>
+        <ul>
+          <li>
+            <Link to="/">Clickads</Link>
+          </li>
+        </ul>
       </div>
       <div className="navber_containner_hero">
         <ul>
