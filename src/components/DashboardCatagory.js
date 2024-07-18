@@ -8,7 +8,7 @@ function DashboardCatagory() {
         <ul>
           <li>
             <i class="fa fa-tachometer" aria-hidden="true"></i>
-            <Link>Dashboard</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
         </ul>
       </div>
