@@ -1495,8 +1495,9 @@ h1 {
     width: 190px;
     font-size: 8px;
   }
+}  
 }
-  /*media mobile 344 px screen */
+/*media mobile 412 px screen */
 @media only screen and (max-width: 412px) {
   .navber_containner {
     width: 410px;
@@ -1816,5 +1817,4 @@ h1 {
     width: 190px;
     font-size: 8px;
   }
-}
 }
