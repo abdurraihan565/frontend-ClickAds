@@ -12,6 +12,7 @@ function ContactUs() {
     try {
       await axios
         .post('https://clickads-backend.onrender.com/api/contact', {
+          timeout: 1000,
           email: email,
           message: message,
         })
