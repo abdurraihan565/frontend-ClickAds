@@ -28,6 +28,7 @@ function Home() {
     try {
       await axios
         .post('https://clickads-backend.onrender.com/api/users/process-register', {
+          timeout: 1000,
           name: RegisterInfo.name,
           email: RegisterInfo.email,
           password: RegisterInfo.password,
