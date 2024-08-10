@@ -18,7 +18,7 @@ function Login() {
     try {
       await axios
         .post('https://clickads-backend.onrender.com/api/auth/login', {
-          timeout: 5000, 
+          timeout: 1000, 
           email: LoginInfo.email,
           password: LoginInfo.password,
         })
