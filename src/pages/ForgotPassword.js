@@ -13,7 +13,7 @@ function ForgotPassword() {
     try {
       await axios
         .post('https://clickads-backend.onrender.com/api/users/forget-password', {
-          timeout: 1000,
+         
           email: email,
         })
         .then((response) => {
