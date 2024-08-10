@@ -59,7 +59,7 @@ code {
   height: 250px;
   width: 200px;
   margin-top: 40px;
-  background-color: #eeecec;
+  background-color: rgb(130, 152, 226);
   border-radius: 10px;
 }
 .dashboard_nav_pop button {
@@ -94,7 +94,8 @@ code {
   padding: 7px;
 }
 .dashboard_nav_profile {
-  border-top: 1px solid rgb(130, 152, 226);
+  border-top: 2px solid rgb(198, 202, 216);
+  border-bottom: 2px solid rgb(198, 202, 216);
 }
 /* hero section*/
 .hero_containner {
