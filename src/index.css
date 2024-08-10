@@ -1496,4 +1496,325 @@ h1 {
     font-size: 8px;
   }
 }
+  /*media mobile 344 px screen */
+@media only screen and (max-width: 412px) {
+  .navber_containner {
+    width: 410px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(130, 152, 226);
+  }
+  .navber_containner_title {
+    margin-left: 0px;
+  }
+  .navber_containner_title ul li a {
+    font-size: 12px;
+  }
+
+  .navber_containner_hero ul li a {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+
+  .hero_containner {
+    display: block;
+  }
+  .hero_containner_des {
+    width: 340px;
+    padding: 10px;
+  }
+  .hero_containner_des h1 {
+    font-size: 17px;
+    padding: 10px;
+  }
+  .hero_containner_des span {
+    font-size: 30px;
+  }
+  .hero_containner_input {
+    width: 315px;
+    padding: 10px;
+    margin-left: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .hero_containner_input form input {
+    width: 300px;
+  }
+  .hero_containner_input form select {
+    width: 305px;
+  }
+  .btn a {
+    margin-left: 130px;
+  }
+  .List_User_Contanner {
+    display: block;
+    margin-left: 0px;
+  }
+  .List_User_des {
+    padding: 30px;
+  }
+  .List_User_des i {
+    font-size: 10px;
+  }
+  .List_User_des h1 {
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  .List_User_des span {
+    font-size: 10px;
+  }
+  .Adspartners {
+    margin-top: 10px;
+  }
+  .Adspartners h1 {
+    font-size: 20px;
+  }
+  .Adspartners_containner {
+    margin-left: 0px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  .Adspartners_containner_des {
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+  }
+  .Adspartners_containner_des i {
+    padding: 2px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .Demo_User_Containner {
+    display: block;
+    height: auto;
+    margin-top: 0px;
+  }
+  .Demo_User_des {
+    width: 190px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 70px;
+  }
+  .Demo_User_des i {
+    font-size: 15px;
+  }
+  .Demo_User_des span {
+    font-size: 13px;
+  }
+  .Demo_User_des p {
+    font-size: 12px;
+  }
+  .fotter {
+    width: 410px;
+    height: 400px;
+  }
+
+  .fotter_containner_first_des_info h1 {
+    font-size: 10px;
+  }
+  .fotter_containner_first_des_info ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+  }
+  .fotter_containner_first_des_comunity h1 {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .fotter_containner_first_des_comunity i {
+    font-size: 10px;
+    padding: 0px;
+    margin-right: 20px;
+  }
+  /*login*/
+  .login_containner {
+    margin-left: 0px;
+    height: 400px;
+  }
+
+  /*dashboard/earn-money*/
+  .dashboard_containner_popup {
+    padding: 0px;
+    width: 120px;
+  }
+  .dashboard_nav_pop {
+    margin-left: 210px;
+    margin-top: 30px;
+  }
+
+  .dashboard_containner_popup_des_Active ul {
+    padding: 2px;
+  }
+  .dashboard_containner_popup_des_Active ul li i {
+    font-size: 8px;
+  }
+  .dashboard_containner_popup_des_Active {
+    padding: 0px;
+  }
+  .dashboard_containner_popup_des_Active ul li a {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+  .dashboard_containner_popup_des ul {
+    padding: 2px;
+    margin-left: 6px;
+  }
+  .dashboard_containner_popup_des ul li a {
+    font-size: 8px;
+    padding: 7px;
+  }
+  .dashboard_containner_popup_des ul li i {
+    padding: 0px;
+    font-size: 8px;
+  }
+
+  .Earn_money h1 {
+    font-size: 9px;
+  }
+  .Earn_money_containner {
+    width: 210px;
+    height: 30px;
+    padding: 15px;
+  }
+  .Earn_money_containner_des {
+    width: auto;
+  }
+  .Earn_money_containner span {
+    font-size: 8px;
+  }
+  .Earn_money_containner h4 {
+    font-size: 8px;
+    margin-bottom: 50px;
+    margin-left: 4px;
+    padding: 1px;
+  }
+  .Earn_money_containner i {
+    display: none;
+    font-size: 7px;
+    margin-top: 14px;
+  }
+  .Earn_money_containner p {
+    font-size: 8px;
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+  .Earn_money_containner button {
+    width: 50px;
+    height: 20px;
+    padding: 4px;
+    margin-left: 14px;
+    margin-top: 0px;
+    font-size: 8px;
+  }
+  .fotter_containner_first_des_copy_right {
+    font-size: 8px;
+  }
+
+  /*collectpopup*/
+  .Collect_pop_up {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    margin-left: 150px;
+    margin-top: 60px;
+  }
+  .Collect_pop_up h1 {
+    font-size: 8px;
+    text-align: left;
+  }
+  .Collect_pop_up span {
+    font-size: 8px;
+    margin-left: 30px;
+  }
+  .Collect_pop_up button {
+    width: 70px;
+    height: 20px;
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  /*dashboard*/
+  .dashboard_containner {
+    margin-left: 15px;
+    height: 400px;
+  }
+  .dashboard_containner_des {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 0px;
+  }
+  .dashboard_containner_des span {
+    font-size: 8px;
+  }
+  .dashboard_containner_des h4 {
+    font-size: 8px;
+  }
+  .dashboard_containner_des button {
+    font-size: 8px;
+    width: 80px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 50px;
+  }
+  .dashboard_containner_des_msg {
+    margin-top: 230px;
+    padding: 10px;
+    margin-left: 7px;
+    width: 200px;
+    height: 30px;
+  }
+  .dashboard_containner_des_msg span {
+    font-size: 8px;
+  }
+  /*profile & payouts */
+  .Profile_handelar_des .hero_containner_input {
+    width: 200px;
+  }
+
+  .dashboard_containner_popup {
+    padding: 0px;
+  }
+  .Profile_handelar_des {
+    margin-left: 10px;
+    padding: 0px;
+    height: 500px;
+  }
+
+  .Profile_handelar_des .hero_containner_input h1 {
+    font-size: 12px;
+  }
+  .Profile_handelar_des .hero_containner_input h3 {
+    font-size: 8px;
+    margin-left: 85px;
+  }
+  .Profile_handelar_des .hero_containner_input form {
+    font-size: 8px;
+  }
+  .Profile_handelar_des .hero_containner_input form input {
+    font-size: 8px;
+    width: 200px;
+  }
+  .Profile_handelar_des .hero_containner_input span {
+    font-size: 8px;
+    margin-left: 50px;
+  }
+  .Profile_handelar_des .hero_containner_input h5 {
+    font-size: 8px;
+  }
+  .Profile_handelar_des .hero_containner_input h6 {
+    font-size: 8px;
+  }
+  /*fotgot password*/
+  .forgot_password {
+    margin-left: 0px;
+    height: 320px;
+  }
+  .forgot_password .Profile_handelar_des {
+    margin-left: 35px;
+  }
+  /*contact-us*/
+  .hero_containner_input form textarea {
+    width: 190px;
+    font-size: 8px;
+  }
+}
 }
