@@ -7,6 +7,7 @@ function Login() {
   const [password, setpassword] = useState('');
   const [successMsg, setsuccessMsg] = useState('');
   const [InvaildMsg, setInvalidMsg] = useState('');
+  const [Loading, setLoading] = useState(false);
 
   const LoginHandelar = async (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ function Login() {
       email: email,
       password: password,
     };
+   setLoading(true);
 
     try {
       await axios
@@ -50,6 +52,16 @@ function Login() {
         console.log(e);
       }
     }
+     //
+    if (!InvaildMsg) {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
+      // const loader_btn = document.querySelector('.loader_btn');
+      //loader_btn.style.display = 'none';
+    } else {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
+    }
   };
 
   return (
@@ -76,6 +88,7 @@ function Login() {
             }}
           />
           <br></br>
+          {Loading && <div class="loader"></div>}
           <div className="btn">
             <input type="submit" value="submit" />
             <br></br>
