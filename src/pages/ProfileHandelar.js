@@ -63,7 +63,7 @@ function ProfileHandelar() {
       <DashboardCatagory />
       <div className="Profile_handelar_des">
         <div className="hero_containner_input">
-          <h1>Personal information</h1>
+          <h1>Update Your Profile</h1>
           <form action="" onSubmit={UserUpdateHandelar}>
             <label for="">name:</label> <br></br>
             <input
