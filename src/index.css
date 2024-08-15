@@ -916,6 +916,14 @@ h1 {
   .btn a {
     margin-left: 110px;
   }
+   .loader p {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(130, 152, 226);
+  }
+  .loader span {
+    margin-left: 80px;
+  }
   .List_User_Contanner {
     display: block;
     margin-left: 0px;
@@ -1230,6 +1238,14 @@ h1 {
   }
   .btn a {
     margin-left: 110px;
+  }
+   .loader p {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(130, 152, 226);
+  }
+  .loader span {
+    margin-left: 80px;
   }
   .List_User_Contanner {
     display: block;
@@ -1552,6 +1568,14 @@ h1 {
   }
   .btn a {
     margin-left: 130px;
+  }
+   .loader p {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(130, 152, 226);
+  }
+  .loader span {
+    margin-left: 80px;
   }
   .List_User_Contanner {
     display: block;
