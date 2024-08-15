@@ -13,10 +13,12 @@ function Home() {
   const [country, setcountry] = useState('');
   const [successMsg, setsuccessMsg] = useState('');
   const [InvaildMsg, setInvalidMsg] = useState('');
+  const [Loading, setLoading] = useState(false);
 
   //console.log(msg);
   const RegisterHandelar = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const RegisterInfo = {
       name: name,
       email: email,
@@ -42,6 +44,16 @@ function Home() {
       } else {
         console.log(e);
       }
+    }
+     //
+    if (!InvaildMsg) {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
+      const loader_btn = document.querySelector('.loader_btn');
+      loader_btn.style.display = 'none';
+    } else {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
     }
   };
 
@@ -362,6 +374,12 @@ function Home() {
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
             <br></br>
+           {Loading && (
+              <div class="loader">
+                <p>Checking...</p>
+                <span>Please waiting for 1 minutes</span>
+              </div>
+            )}
             <div className="btn">
               <input type="submit" value="submit" />
               <br></br>
