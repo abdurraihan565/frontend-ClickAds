@@ -6,9 +6,11 @@ function ContactUs() {
   const [message, setmessage] = useState('');
   const [successMsg, setsuccessMsg] = useState('');
   const [InvaildMsg, setInvalidMsg] = useState('');
+  const [Loading, setLoading] = useState(false);
 
   const ContactHandelars = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       await axios
         .post('https://clickads-backend.onrender.com/api/contact', {
@@ -25,6 +27,16 @@ function ContactUs() {
       } else {
         console.log(e);
       }
+    }
+     //
+    if (!InvaildMsg) {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
+      const loader_btn = document.querySelector('.loader_btn');
+      loader_btn.style.display = 'none';
+    } else {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
     }
   };
 
@@ -62,6 +74,12 @@ function ContactUs() {
                 }}
               />
               <br></br>
+             {Loading && (
+                <div class="loader">
+                  <p>Checking...</p>
+                  <span>Please waiting for 1 minutes</span>
+                </div>
+              )}
               <div className="btn">
                 <input type="submit" value="Submit" />
                 <br></br>
