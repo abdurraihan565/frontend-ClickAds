@@ -60,7 +60,7 @@ function EarnMoneyDisplay() {
           </div>
           <h4>{points}</h4>
           <i class="fa-solid fa-clock"></i>
-          <p>{time}s</p>
+          <p>{time}0s</p>
           <h1>{result}</h1>
           <Link to={location.state.slug} target="_blank">
             <button onClick={timeCountHandelar}>/VIEW</button>
