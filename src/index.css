@@ -195,7 +195,7 @@ code {
 }
 
 /*loader*/
-.loader {
+.loader p {
  text-align: center;
  font-size: 10px;
  color: rgb(130, 152, 226);
