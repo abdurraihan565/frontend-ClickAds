@@ -48,7 +48,7 @@ function EarnMoney() {
               </div>
               <h4>{points}</h4>
               <i class="fa-solid fa-clock"></i>
-              <p>{time}s</p>
+              <p>{time}0s</p>
               <Link
                 to={`/dashboard/earn-money/${_id}`}
                 state={{ _id, name, slug, description, time, points }}
