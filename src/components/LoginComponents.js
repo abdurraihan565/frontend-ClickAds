@@ -88,7 +88,10 @@ function Login() {
             }}
           />
           <br></br>
-          {Loading && <div class="loader"></div>}
+          {Loading && <div class="loader">
+            <p>Checking...</p>
+            <span>Please waiting for 1 minutes</span>
+          </div>}
           <div className="btn">
             <input type="submit" value="submit" />
             <br></br>
