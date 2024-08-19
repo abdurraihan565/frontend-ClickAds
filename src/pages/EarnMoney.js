@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Helmet } from 'react-helmet';
 function EarnMoney() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+ // console.log(InvalidMsg);
   const [ProductData, setProductData] = useState([]);
 
   useEffect(() => {
