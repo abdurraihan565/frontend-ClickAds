@@ -8,7 +8,7 @@ function UserVerifyLogin() {
   const pathName = location.pathname;
   const segments = pathName.split('/');
   const token = segments.pop();
-  console.log(token);
+  //console.log(token);
   const [successMsg, setsuccessMsg] = useState('');
   const [InvaildMsg, setInvalidMsg] = useState('');
 
