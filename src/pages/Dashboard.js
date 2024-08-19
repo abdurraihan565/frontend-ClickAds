@@ -18,7 +18,7 @@ function Dashboard() {
       axios
         .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
-          console.log(response.data.message);
+          //console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
         });
     } catch (e) {
