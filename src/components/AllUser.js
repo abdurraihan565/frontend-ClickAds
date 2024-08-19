@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 function AllUser() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+ // console.log(InvalidMsg);
   const [UsersData, setUsersData] = useState([]);
-  console.log(UsersData);
+//  console.log(UsersData);
 
   useEffect(() => {
     const fetchData = async () => {
