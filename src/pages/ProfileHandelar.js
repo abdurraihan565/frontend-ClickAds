@@ -8,9 +8,9 @@ function ProfileHandelar() {
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
   const [successMsg, setsuccessMsg] = useState('');
-  console.log(successMsg);
+ // console.log(successMsg);
   const [InvaildMsg, setInvalidMsg] = useState('');
-  console.log(InvaildMsg);
+ // console.log(InvaildMsg);
 
   //get data from session staorge
   const userDataAll = JSON.parse(sessionStorage.getItem('userData'));
@@ -24,7 +24,7 @@ function ProfileHandelar() {
       axios
         .get('https://clickads-backend.onrender.com/api/users/' + id, {})
         .then((response) => {
-          console.log(response.data.message);
+         // console.log(response.data.message);
           setuserSingleData(response.data.payload.user);
         });
     } catch (e) {
