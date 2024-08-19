@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function DeleteMessages() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+ // console.log(InvalidMsg);
   const [MessageData, setProductData] = useState([]);
   // console.log(ProductData);
   useEffect(() => {
