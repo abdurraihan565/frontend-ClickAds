@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 function AllProducts() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+//  console.log(InvalidMsg);
   const [ProductData, setProductData] = useState([]);
-  console.log(ProductData);
+//  console.log(ProductData);
   useEffect(() => {
     const fetchData = async () => {
       try {
