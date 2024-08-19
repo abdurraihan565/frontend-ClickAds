@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 function PayoutsHandelar() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+ // console.log(InvalidMsg);
   const [PayoutsData, setPayoutsData] = useState([]);
-  console.log(PayoutsData);
+//  console.log(PayoutsData);
   useEffect(() => {
     try {
       axios
