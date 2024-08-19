@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function BanUsers() {
   const [InvalidMsg, setInvalidMsg] = useState('');
-  console.log(InvalidMsg);
+ // console.log(InvalidMsg);
   const [UsersData, setUsersData] = useState([]);
-  console.log(UsersData);
+//  console.log(UsersData);
   useEffect(() => {
     const fetchData = async () => {
       try {
