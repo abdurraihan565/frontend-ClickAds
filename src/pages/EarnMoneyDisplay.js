@@ -69,7 +69,7 @@ function EarnMoneyDisplay() {
       </div>
       <CollectPopUp Collect={Collect} points={points} id={id} />
    
-  <script type='text/javascript' src='//pl24098694.highratecpm.com/83/42/83/834283bde4454ce2be50a3a213948e8d.js'></script>
+
     </div>
   );
 }
