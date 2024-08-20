@@ -49,6 +49,8 @@ function ForgotPassword() {
         />
       </Helmet>
       <div className="Profile_handelar_des">
+          <script async="async" data-cfasync="false" src="//pl24098785.highratecpm.com/cb51ec782c7a36eec21cd788588ec686/invoke.js"></script>
+          <div id="container-cb51ec782c7a36eec21cd788588ec686"></div>
         <div className="hero_containner_input">
           <h1>Forgot Password</h1>
           <form action="" onSubmit={ForgotPasswordHandeler}>
