@@ -37,6 +37,9 @@ function EarnMoney() {
 
       <div className="Earn_money">
         <h1>Earn Money By Unlimited Watching ADS</h1>
+            
+        <script async="async" data-cfasync="false" src="//pl24098785.highratecpm.com/cb51ec782c7a36eec21cd788588ec686/invoke.js"></script>
+        <div id="container-cb51ec782c7a36eec21cd788588ec686"></div>
 
         {ProductData.map((value) => {
           const { _id, name, slug, description, points, time } = value;
