@@ -342,6 +342,19 @@ code {
   padding: 6px;
   color: rgb(130, 152, 226);
 }
+.check_Product_Msg {
+  display: none;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  margin-left: 600px;
+}
+.check_Product_Msg p {
+  font-size: 12px;
+  padding: 7px;
+  color: red;
+}
 .Earn_money_containner {
   display: flex;
   padding: 20px;
