@@ -20,8 +20,7 @@ function EarnMoneyDisplay() {
   const [InvalidMsg, setInvalidMsg] = useState('');
 
   const timeCountHandelar = () => {
-
-     try {
+      try {
       await axios
         .post('http://localhost:3002/api/auth/check-product', {
           email: email,
@@ -37,7 +36,7 @@ function EarnMoneyDisplay() {
         console.log(e);
       }
     }
-
+   
     //display none for p tag
     const p = document.querySelector('.Earn_money_containner p');
     p.style.display = 'none';
@@ -62,7 +61,6 @@ function EarnMoneyDisplay() {
     }, 1000);
   };
   ///check_Product_Msg
-
   if (InvalidMsg) {
     const check_Product_Msg = document.querySelector('.check_Product_Msg');
     check_Product_Msg.style.display = 'block';
