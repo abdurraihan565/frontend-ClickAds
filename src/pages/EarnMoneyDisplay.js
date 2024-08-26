@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { Helmet } from 'react-helmet';
 import DashboardCatagory from '../components/DashboardCatagory';
 import CollectPopUp from '../components/CollectPopUp';
@@ -13,8 +14,30 @@ function EarnMoneyDisplay() {
   const time = location.state.time;
   const demo = 11000;
   const totalTime = time * demo;
+  //get data from session staorge
+  const userDataAll = JSON.parse(sessionStorage.getItem('userData'));
+  const email = userDataAll.email;
+  const [InvalidMsg, setInvalidMsg] = useState('');
 
   const timeCountHandelar = () => {
+
+     try {
+      await axios
+        .post('http://localhost:3002/api/auth/check-product', {
+          email: email,
+          productid: id,
+        })
+        .then((response) => {
+          //console.log(response.data.message)
+        });
+    } catch (e) {
+      if (e.response.data.message) {
+        setInvalidMsg(e.response.data.message);
+      } else {
+        console.log(e);
+      }
+    }
+
     //display none for p tag
     const p = document.querySelector('.Earn_money_containner p');
     p.style.display = 'none';
@@ -38,6 +61,12 @@ function EarnMoneyDisplay() {
       }
     }, 1000);
   };
+  ///check_Product_Msg
+
+  if (InvalidMsg) {
+    const check_Product_Msg = document.querySelector('.check_Product_Msg');
+    check_Product_Msg.style.display = 'block';
+  }
 
   return (
     <div className="dashboard_containner">
@@ -53,6 +82,9 @@ function EarnMoneyDisplay() {
 
       <div className="Earn_money">
         <h1>Earn Money By Unlimited Watching ADS</h1>
+        <div className="check_Product_Msg">
+          <p>{InvalidMsg}</p>
+        </div>
 
         <div className="Earn_money_containner">
           <div className="Earn_money_containner_des">
