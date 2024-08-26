@@ -77,7 +77,11 @@ function CollectPopUp(props) {
       Navigate('/dashboard/earn-money/', {});
     }, 2000);
   };
-
+//check product msg responce
+  if (CheckProductInvalidMsg) {
+    const Collect_pop_up = document.querySelector('.Collect_pop_up');
+    Collect_pop_up.style.display = 'none';
+  }
   return (
     <div className="Collect_pop_up">
       <h1>{Collect}</h1>
