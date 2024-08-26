@@ -19,7 +19,7 @@ function EarnMoneyDisplay() {
   const email = userDataAll.email;
   const [InvalidMsg, setInvalidMsg] = useState('');
 
-  const timeCountHandelar = () => {
+  const timeCountHandelar = async () => {
       try {
       await axios
         .post('http://localhost:3002/api/auth/check-product', {
