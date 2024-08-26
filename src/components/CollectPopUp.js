@@ -8,6 +8,7 @@ function CollectPopUp(props) {
   const Collect = props.Collect;
   const productPoints = props.points;
   const productId = props.id;
+  const CheckProductInvalidMsg = props.InvalidMsg;
 
   // put data from databese poins
   const [successMsg, setsuccessMsg] = useState('');
