@@ -99,7 +99,7 @@ function EarnMoneyDisplay() {
           </Link>
         </div>
       </div>
-      <CollectPopUp Collect={Collect} points={points} id={id} />
+      <CollectPopUp Collect={Collect} points={points} id={id}  InvalidMsg={InvalidMsg} />
    
 
     </div>
