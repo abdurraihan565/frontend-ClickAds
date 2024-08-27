@@ -27,7 +27,7 @@ function EarnMoneyDisplay() {
           productid: id,
         })
         .then((response) => {
-          //console.log(response.data.message)
+          console.log(response.data.message)
         });
     } catch (e) {
       if (e.response.data.message) {
