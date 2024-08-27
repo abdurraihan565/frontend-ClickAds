@@ -1062,6 +1062,13 @@ h1 {
     height: 30px;
     padding: 15px;
   }
+  .check_Product_Msg {
+    margin-left: 60px;
+    width: 200px;
+  }
+  .check_Product_Msg p {
+    font-size: 8px;
+  }
   .Earn_money_containner_des {
     width: auto;
   }
@@ -1389,6 +1396,13 @@ h1 {
     width: 210px;
     height: 30px;
     padding: 15px;
+  }
+  .check_Product_Msg {
+    margin-left: 60px;
+    width: 200px;
+  }
+  .check_Product_Msg p {
+    font-size: 8px;
   }
   .Earn_money_containner_des {
     width: auto;
@@ -1719,6 +1733,13 @@ h1 {
     width: 210px;
     height: 30px;
     padding: 15px;
+  }
+  .check_Product_Msg {
+    margin-left: 60px;
+    width: 200px;
+  }
+  .check_Product_Msg p {
+    font-size: 8px;
   }
   .Earn_money_containner_des {
     width: auto;
