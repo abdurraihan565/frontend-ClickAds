@@ -22,7 +22,7 @@ function EarnMoneyDisplay() {
   const timeCountHandelar = async () => {
       try {
       await axios
-        .post('http://localhost:3002/api/auth/check-product', {
+        .post('https://clickads-backend.onrender.com/api/auth/check-product', {
           email: email,
           productid: id,
         })
