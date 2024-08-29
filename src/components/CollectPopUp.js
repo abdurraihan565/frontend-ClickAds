@@ -7,7 +7,7 @@ function CollectPopUp(props) {
   //props data from product
   const Collect = props.Collect;
   const productPoints = props.points;
-  const productId = props.id;
+  //const productId = props.id;
   const CheckProductInvalidMsg = props.InvalidMsg;
 
   // put data from databese poins
@@ -63,6 +63,7 @@ function CollectPopUp(props) {
       setInvalidMsg(e);
     }
     // delete product
+    /*
     try {
       axios
         .delete('https://clickads-backend.onrender.com/api/products/' + productId, {})
@@ -72,7 +73,7 @@ function CollectPopUp(props) {
     } catch (e) {
       setInvalidMsg(e);
     }
-
+   */
     //navigate-
     setTimeout(() => {
       Navigate('/dashboard/earn-money/', {});
