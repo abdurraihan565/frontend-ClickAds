@@ -13,7 +13,7 @@ function ContactUs() {
     setLoading(true);
     try {
       await axios
-        .post(' http://localhost:3000/api/contact', {
+        .post('https://clickads-backend.onrender.com/api/contact', {
           timeout: 1000,
           email: email,
           message: message,
